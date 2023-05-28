@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background-color: rgba(199, 247, 231, 0.622);
+  position: relative;
+}
+body .hide {
+  z-index: 0.2;
+  opacity: 0.2;
+}
+body h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: rgb(114, 141, 136);
+}
+body .addTask {
+  border: none;
+  background-color: rgb(207, 243, 231);
+  border-radius: 10px;
+  width: 300px;
+  height: 45px;
+}
+body .addTask:hover {
+  cursor: pointer;
+  background-color: rgb(71, 149, 123);
+}
+body .modal {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: 15px 10px rgb(114, 141, 136);
+  width: 400px;
+  height: 300px;
+  z-index: 1;
+  opacity: 1;
+  top: 30%;
+  left: 30%;
+  background-color: rgb(141, 245, 226);
+}
+body .modal button {
+  background-color: rgb(207, 243, 231);
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+body .modal button:hover {
+  cursor: pointer;
+  background-color: rgb(71, 149, 123);
+}
+body .closeModal {
+  display: none;
+}
+body .tasks {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+}
+body ul {
+  list-style: none;
+}
+body ul li {
+  width: 80%;
+}
+body ul .task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+body ul .task .remove {
+  background-color: rgb(207, 243, 231);
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+}
+body ul .task .remove:hover {
+  cursor: pointer;
+  background-color: rgb(71, 149, 123);
+}/*# sourceMappingURL=style.css.map */

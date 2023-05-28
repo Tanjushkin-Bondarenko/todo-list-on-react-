@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    background-color:rgba(199, 247, 231, 0.622); ;
+    position:relative;
+    
+    .hide{
+        z-index: 0.2;
+        opacity: 0.2;
+    }
+    h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        color: rgb(114, 141, 136);
+    }
+    .addTask{
+        border: none;
+        background-color: rgb(207, 243, 231);
+        border-radius: 10px;
+        width: 300px;
+        height: 45px;
+        &:hover{
+           cursor: pointer;
+           background-color: rgb(71, 149, 123); ;
+        }
+    }
+.modal{
+    display: flex;
+    position: absolute;
+   align-items: center;
+   justify-content: space-evenly;
+   border-radius: 10px;
+   box-shadow:15px 10px rgb(114, 141, 136);
+    width: 400px;
+    height: 300px;
+    z-index: 1;
+    opacity: 1;
+    top: 30%;
+    left: 30%;
+    background-color: rgb(141, 245, 226);
+    button{
+        background-color: rgb(207, 243, 231);
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(71, 149, 123); 
+         }
+    }
+}
+.closeModal{
+    display: none;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    
+}
+ul{
+    list-style: none;
+    li{
+       
+        width: 80%;
+    }
+    .task{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px ;
+   .remove{
+    background-color: rgb(207, 243, 231);
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(71, 149, 123); 
+    }
+   }
+    }
+}}
