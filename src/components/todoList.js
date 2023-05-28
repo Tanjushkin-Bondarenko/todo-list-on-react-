@@ -52,9 +52,10 @@ export const TodoList = () => {
     }
   return (
     <div>
+   
     <div className= {` ${modal ? "hide" : "show"}`}>
           <h2>second todo list</h2>
-              <button className='addTask' onClick={addTodo}>Create new task</button>
+          <Button variant="outlined" className='addTask' onClick={addTodo}>Create new task</Button>
           <ul className='tasks'>
                   { 
                       todoList.map((todo, index) => (
